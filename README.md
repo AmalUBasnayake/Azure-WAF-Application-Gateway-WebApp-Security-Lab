@@ -1,5 +1,18 @@
 # Azure WAF + Application Gateway Web Application Security Lab
 
+
+![Azure](https://img.shields.io/badge/Platform-Microsoft%20Azure-blue)
+![Security](https://img.shields.io/badge/Focus-Cloud%20Security-red)
+![WAF](https://img.shields.io/badge/Protection-Web%20Application%20Firewall-green)
+![OWASP](https://img.shields.io/badge/Security-OWASP%20Top%2010-orange)
+![AZ-500](https://img.shields.io/badge/Certification-AZ--500-purple)
+![Status](https://img.shields.io/badge/Project-Completed-brightgreen)
+![Maintained](https://img.shields.io/badge/Maintained-Yes-success)
+
+![GitHub Repo stars](https://img.shields.io/github/stars/AmalUBasnayake/Azure-WAF-Application-Gateway-WebApp-Security-Lab?style=social)
+
+Hands-on Azure Security Lab demonstrating how to protect cloud web applications using Application Gateway WAF and OWASP threat mitigation.
+
 ## Project Overview
 
 This project demonstrates how to secure a cloud web application using **Azure Application Gateway with Web Application Firewall (WAF v2)**.
