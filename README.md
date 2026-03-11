@@ -187,7 +187,7 @@ Cookie affinity disabled
 
 ---
 
-# Step 8 — Configure Routing Rules
+# Step 8 : Configure Routing Rules
 
 Create a routing rule to connect the listener, backend pool, and backend settings.
 
@@ -198,11 +198,11 @@ Port: 80
 
 ---
 
-# Step 9 — Enable WAF Prevention Mode
+# Step 9 : Enable WAF Prevention Mode
 
 Enable **Prevention Mode** to actively block malicious traffic.
 
-*(Insert screenshot: WAF prevention mode)*
+![ WAF prevention mode](screenshorts/prevention.png) 
 
 ---
 
