@@ -30,21 +30,23 @@ This project aligns with **Microsoft Azure Security Engineer (AZ-500)** learning
 
 ---
 
-# Architecture Diagram
 
-*(Insert architecture diagram image here)*
+## 🛡️ Enhanced Security with Azure WAF v2
 
-Example architecture flow:
+To ensure enterprise-grade security, the application is fronted by **Azure Application Gateway** with **Web Application Firewall (WAF v2)** enabled. This protects the backend infrastructure from common web vulnerabilities (OWASP Top 10) such as SQL Injection and XSS.
 
-Internet  
-↓  
-Public IP  
-↓  
-Azure Application Gateway (WAF v2)  
-↓  
-Backend Pool  
-↓  
-Azure Web App
+### 🔄 Traffic Flow Architecture
+The following sequence illustrates how an external request is processed and secured:
+
+| Layer | Component | Description |
+| :--- | :--- | :--- |
+| **Edge** | Internet | Incoming user traffic. |
+| **Gateway** | Public IP | Single entry point to the Azure VNet. |
+| **Security** | Azure WAF v2 | Deep packet inspection and attack mitigation. |
+| **Routing** | Backend Pool | Logical grouping of backend App Services. |
+| **Hosting** | Azure Web App | Securely serves the final web application. |
+
+![Architecture Diagram](screenshorts/architecturediagram.png)
 
 ---
 
