@@ -93,15 +93,15 @@ This architecture ensures that traffic must pass through the **WAF layer before 
 
 ---
 
-# Step 1 — Create Resource Group
+# Step 1 : Create Resource Group
 
 First, create a Resource Group to host all Azure resources used in the lab.
 
-*(Insert screenshot: Resource Group creation)*
+![Resource Group](screenshorts/resource-group.png)
 
 ---
 
-# Step 2 — Create Virtual Network
+# Step 2 : Create Virtual Network
 
 Create a Virtual Network with segmented subnets.
 
@@ -115,11 +115,12 @@ Subnets:
 10.0.1.0/24 → Backend-Subnet  
 10.0.2.0/24 → WAF-Subnet
 
-*(Insert screenshot: VNet with multiple subnets)*
+![VNet with multiple subnets](screenshorts/VNet-with-multiple-subnets.png)
+
 
 ---
 
-# Step 3 — Deploy Azure Web App
+# Step 3 : Deploy Azure Web App
 
 A sample web application is deployed using **Azure App Service**.
 
@@ -129,11 +130,11 @@ Runtime example:
 
 This application acts as the **backend server behind the Application Gateway**.
 
-*(Insert screenshot: Web App deployment)*
+![Web App deployment](screenshorts/webapp.png)
 
 ---
 
-# Step 4 — Create Web Application Firewall Policy
+# Step 4 : Create Web Application Firewall Policy
 
 Create a **WAF Policy** and configure security rules.
 
@@ -144,11 +145,11 @@ OWASP Core Rule Set enabled
 SQL Injection protection  
 Cross-Site Scripting protection
 
-*(Insert screenshot: WAF Policy creation)*
+![WAF Policy creation](screenshorts/create-waf-policy.png)
 
 ---
 
-# Step 5 — Deploy Azure Application Gateway
+# Step 5 : Deploy Azure Application Gateway
 
 Deploy **Azure Application Gateway (WAF v2)**.
 
@@ -160,21 +161,21 @@ Public IP attached
 
 The Application Gateway acts as the **secure entry point for incoming web traffic**.
 
-*(Insert screenshot: Application Gateway creation)*
+  ![Application Gateway creation](screenshorts/create-waf-policy.png)
 
 ---
 
-# Step 6 — Configure Backend Pool
+# Step 6 : Configure Backend Pool
 
 Create a Backend Pool that points to the **Azure Web App**.
 
 This connects the Application Gateway to the backend application.
 
-*(Insert screenshot: Backend Pool configuration)*
+ ![Backend Pool configuration](Backend-Pool-configuration.png) 
 
 ---
 
-# Step 7 — Configure Backend Settings
+# Step 7 : Configure Backend Settings
 
 Configure backend HTTP settings.
 
@@ -182,7 +183,7 @@ Protocol: HTTP
 Port: 80  
 Cookie affinity disabled
 
-*(Insert screenshot: Backend settings)*
+ ![Backend settings](backend-setting.png)
 
 ---
 
@@ -193,7 +194,7 @@ Create a routing rule to connect the listener, backend pool, and backend setting
 Protocol: HTTP  
 Port: 80
 
-*(Insert screenshot: Routing rule configuration)*
+ ![ Routing rule configurations](backend-setting.png) 
 
 ---
 
